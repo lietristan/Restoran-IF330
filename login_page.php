@@ -19,8 +19,9 @@ include "navbar.html";
                             <input type='password' name='txtPass' class = "inputbox" required  >
                     </div>
                     <button type="submit" class="submitbtn btn btn-warning btn-sm" value="Login">Log in</button>
-                    <div class="signup_link">
-                        Belum punya akun? <a href="signup_page.php">Daftar disini</a></p>    
+                    <div class="signup_link mx-auto">
+                        Belum punya akun? <br />
+                        <a href="signup_page.php">Daftar disini</a></p>    
                     </div>
                 </form>
             </div>
