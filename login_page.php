@@ -4,26 +4,27 @@ include "navbar.html";
 
 <link rel="stylesheet" href="login_style.css"/>
 <body>
-    <div class ="center">
-        <h1>Login</h1>
-        <form action='login_page.php' method='POST'>
-        <div> 
-            <div class=txt_field>
-                <input type='text' name='txtUser' required>
-                <span></span>
-                <label>Username</label>
+    <div class ="container" style = "width: 450px;">
+        <div class = "card">
+            <div class = "mx-auto my-5" style = "width:200px;">
+                <h1 class = "loginTitle">Login here</h1>
+                <form action='login_page.php' method='POST'>
+                    <div> 
+                        <div class="txt_field mb-4">
+                            <label class="labelEmail">Email</label>
+                            <input type='text' name='txtUser' class = "inputbox" placeholder = "name@example.com" required>
+                        </div>
+                        <div class="txt_field mb-4">
+                                <label class="labelPass">Password</label>
+                            <input type='password' name='txtPass' class = "inputbox" required  >
+                    </div>
+                    <button type="submit" class="submitbtn btn btn-warning btn-sm" value="Login">Log in</button>
+                    <div class="signup_link">
+                        Belum punya akun? <a href="signup_page.php">Daftar disini</a></p>    
+                    </div>
+                </form>
             </div>
-            <div class=txt_field>
-                <input type='password' name='txtPass' required>
-                <span></span>
-                <label>Password</label>
-            </div>
-        <input type="submit" value="Login">
-        <div class="signup_link">
-        Belum punya akun? <a href="signup_page.php">Daftar disini</a></p>    
-            </div>
-        
-        </form>
+        </div>
     </div>         
 </body>
 

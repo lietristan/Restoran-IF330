@@ -1,0 +1,75 @@
+.loginCard{
+    width: 100px;
+    background-color: aqua;
+}
+
+.card{
+    justify-self: center;
+    width: 450px;
+}
+
+.labelEmail{
+    font-weight:lighter;
+    /* background-color: #2b2b29; */
+    border-radius: 5px;
+    width: 45px;
+    height: 27px;
+    padding-left: 4px;
+    color:aliceblue;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+    backdrop-filter: blur(1px); 
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+.labelPass{
+    font-weight:lighter;
+    background-color: #2b2b29;
+    border-radius: 5px;
+    width: 70px;
+    height: 27px;
+    padding-left: 4px;
+    color:aliceblue;
+    box-shadow: 0 15px 25px rgba(20, 19, 19, 0.2); 
+    backdrop-filter: blur(1px); 
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.container{
+    padding-top: 5%;
+}
+
+.signup_link{
+    width: 400px;
+    margin-top: 25px;
+}
+
+.submitbtn{
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.inputbox{
+    border-radius: 5px;
+    height:35px;
+}
+.card{
+    border-radius: 10px;
+    /* background-color:#d4bc8e;
+    opacity: 0.9;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+    backdrop-filter: blur(14px);  */
+    box-shadow: 0 15px 25px rgba(8, 7, 7, 0.2); 
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+body{
+    background-image: url(resources/restologin.jpg);
+    background-size:1800px;
+}
+
+.loginTitle{
+    font-weight: bold;
+    color:#1f1f1d;
+    margin-bottom: 40px;
+}
+
