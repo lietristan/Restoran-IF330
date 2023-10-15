@@ -40,8 +40,7 @@
 }
 
 .submitbtn{
-    justify-content: center;
-    margin-left: 70px;
+    background-color:  #f3c44b;
 }
 
 .inputbox{
@@ -95,9 +94,12 @@ body{
 .btnRefresh img{
     width: 30px;
     height: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .refreshText{
+    margin-left:23px;
+    margin-top: 1px;
     font-weight: bolder;
+    font-weight: 800;
 }

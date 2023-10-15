@@ -17,7 +17,7 @@
             <div class = "card">
                 <div class = "mx-auto my-5" style = "width:200px;">
                     <h1 class = "loginTitle">Login here</h1>
-                    <form action='login_page.php' method='POST'>
+                    <form action='home.php' method='POST'>
                         <div> 
                             <div class="txt_field mb-4">
                                 <label class="labelEmail">Email</label>
@@ -28,7 +28,7 @@
                                 <input type='password' name='txtPass' class = "inputbox" required  >
                         </div>
 
-                        <label>Enter Captcha:</label>
+                        <label style="font-weight: 650;">Enter Captcha:</label>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <input type="text" class="form-control" id="textinput">
@@ -46,12 +46,10 @@
                             </div>
 			            </div>
                         <div class="form-group">
-                            <button onclick="validcap()" class="btn btn-lg btn-success btn-block">Submit</button>
+                            <button type = "submit" onclick="validcap()" class="submitbtn btn btn-lg btn-block">Log in</button>
                         </div>
-
-
-
-                        <button type="submit" class="submitbtn btn btn-warning btn-sm" value="Login">Log in</button>
+    
+                        <!-- <button type="submit" class="submitbtn btn btn-warning btn-sm" value="Login">Log in</button> -->
                         <div class="signup_link mx-auto">
                             Belum punya akun? <br />
                             <a href="signup_page.php">Daftar di sini</a></p>    
