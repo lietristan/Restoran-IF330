@@ -17,7 +17,7 @@
             <div class = "card">
                 <div class = "mx-auto my-5" style = "width:200px;">
                     <h1 class = "loginTitle">Login here</h1>
-                    <form action='home.php' method='POST'>
+                    <form action='login_page.php' method='POST'>
                         <div> 
                             <div class="txt_field mb-4">
                                 <label class="labelEmail">Email</label>
@@ -57,51 +57,33 @@
                     </form>
                 </div>
             </div>
-        </div>   
+        </div>  
+         
+        <?php
+            $kon = mysqli_connect("localhost", "root", "", "uts_restoran");
 
+            if (isset($_POST['txtUser'])) {
+                $q = "SELECT * FROM user
+                        WHERE username='" . $_POST['txtUser'] . "' AND password = '" . $_POST['txtPass'] . "'";
+
+                $query = mysqli_query($kon, $q);
+
+                $jml = mysqli_num_rows($query);
+                if ($jml > 0) {
+                    if ($query) {
+                        // START SESSON
+                    } else {
+                        
+                        // echo '<script type="text/javascript">
+                        //         alert("Wrong email or password!");
+                        //     </script>';
+                        echo "kontol";
+                    }
+                }
+            }
+        ?>
 
         <script src="captcha.js"></script>      
     </body> 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-<?php
-
-$kon = mysqli_connect("localhost","root","","uts_restoran");
-
-if(isset($_POST['txtUser'])){
-    $q = "SELECT *FROM user
-    WHERE username='".$_POST['txtUser']."' AND password = '".$_POST['txtPass']."'";
-
-    $query=mysqli_query($kon, $q);
-
-    $jml = mysqli_num_rows($query);
-    if($jml>0){
-        if($query){
-            echo "Login Sukses";
-        } else {
-            echo "Login gagal";
-        }
-    }
-}
-
-echo "<pre>";
-print_r($_POST);
-echo "</pr1e>";
-
-// setelah login biasanya di simpan di SESSION
-?>

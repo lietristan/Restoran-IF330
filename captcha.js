@@ -21,10 +21,15 @@ function validcap(){
     var stg1 = document.getElementById('capt').value;
     var stg2 = document.getElementById('textinput').value;
     if(stg1==stg2){
-        alert("Form is validated Succesfully");
+        // alert("Captcha validated Succesfully");
         return true;
     }else{
-        alert("Please enter a valid captcha");
+        // alert("Please enter a valid captcha");
             return false;
         }
+}
+
+function alertLogin(){
+    alert("Wrong email or password!");
+
 }
