@@ -77,7 +77,7 @@
                         // echo '<script type="text/javascript">
                         //         alert("Wrong email or password!");
                         //     </script>';
-                        echo "kontol";
+                        echo "test";
                     }
                 }
             }
