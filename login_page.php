@@ -13,7 +13,7 @@ include "navbar.html";
                         <div class="txt_field mb-4">
                             <label class="labelEmail">Email</label>
                             <input type='text' name='txtUser' class = "inputbox" placeholder = "name@example.com" required>
-                        </div>
+                        </div>  
                         <div class="txt_field mb-4">
                                 <label class="labelPass">Password</label>
                             <input type='password' name='txtPass' class = "inputbox" required  >
@@ -21,13 +21,13 @@ include "navbar.html";
                     <button type="submit" class="submitbtn btn btn-warning btn-sm" value="Login">Log in</button>
                     <div class="signup_link mx-auto">
                         Belum punya akun? <br />
-                        <a href="signup_page.php">Daftar disini</a></p>    
+                        <a href="signup_page.php">Daftar di sini</a></p>    
                     </div>
                 </form>
             </div>
         </div>
     </div>         
-</body>
+</body> 
 
 
 
@@ -40,7 +40,7 @@ include "navbar.html";
 
 
 
-
+    
 
 
 </div>
