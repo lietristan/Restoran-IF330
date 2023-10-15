@@ -88,5 +88,16 @@ body{
     text-align: center;
     box-shadow: 0 15px 25px rgba(20, 19, 19, 0.2); 
     backdrop-filter: blur(100px); 
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 
+    0, 0.5); 
+}
+
+.btnRefresh img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.refreshText{
+    font-weight: bolder;
 }

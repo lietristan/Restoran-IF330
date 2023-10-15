@@ -1,33 +1,69 @@
-<?php
-include "navbar.html";
-?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Restoran IF330
+        </title>
 
-<link rel="stylesheet" href="login_style.css"/>
-<body>
-    <div class ="container" style = "width: 450px;">
-        <div class = "card">
-            <div class = "mx-auto my-5" style = "width:200px;">
-                <h1 class = "loginTitle">Login here</h1>
-                <form action='login_page.php' method='POST'>
-                    <div> 
-                        <div class="txt_field mb-4">
-                            <label class="labelEmail">Email</label>
-                            <input type='text' name='txtUser' class = "inputbox" placeholder = "name@example.com" required>
-                        </div>  
-                        <div class="txt_field mb-4">
-                                <label class="labelPass">Password</label>
-                            <input type='password' name='txtPass' class = "inputbox" required  >
-                    </div>
-                    <button type="submit" class="submitbtn btn btn-warning btn-sm" value="Login">Log in</button>
-                    <div class="signup_link mx-auto">
-                        Belum punya akun? <br />
-                        <a href="signup_page.php">Daftar di sini</a></p>    
-                    </div>
-                </form>
+        <?php
+        include "navbar.html";
+        ?>
+
+        <link rel="stylesheet" href="login_style.css"/>
+    </head>
+
+    <body>
+        <div class ="container" style = "width: 450px;">
+            <div class = "card">
+                <div class = "mx-auto my-5" style = "width:200px;">
+                    <h1 class = "loginTitle">Login here</h1>
+                    <form action='login_page.php' method='POST'>
+                        <div> 
+                            <div class="txt_field mb-4">
+                                <label class="labelEmail">Email</label>
+                                <input type='text' name='txtUser' class = "inputbox" placeholder = "name@example.com" required>
+                            </div>  
+                            <div class="txt_field mb-4">
+                                    <label class="labelPass">Password</label>
+                                <input type='password' name='txtPass' class = "inputbox" required  >
+                        </div>
+
+                        <label>Enter Captcha:</label>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="textinput">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" readonly id="capt">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class = "form-group">
+                                <div class="refreshText">Refresh Captcha</div>
+                            </div>
+                            <div class = "form-group btnRefresh">
+                                <img src="resources/refresh-button.png" onclick="cap()">
+                            </div>
+			            </div>
+                        <div class="form-group">
+                            <button onclick="validcap()" class="btn btn-lg btn-success btn-block">Submit</button>
+                        </div>
+
+
+
+                        <button type="submit" class="submitbtn btn btn-warning btn-sm" value="Login">Log in</button>
+                        <div class="signup_link mx-auto">
+                            Belum punya akun? <br />
+                            <a href="signup_page.php">Daftar di sini</a></p>    
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </div>         
-</body> 
+        </div>   
+
+
+        <script src="captcha.js"></script>      
+    </body> 
 
 
 
@@ -40,7 +76,7 @@ include "navbar.html";
 
 
 
-    
+
 
 
 </div>
