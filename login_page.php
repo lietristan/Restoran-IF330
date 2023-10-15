@@ -8,6 +8,11 @@
         <?php
         include "navbar.html";
         ?>
+    <script>
+    function hello() {
+        alert('Hello World!');
+    }
+    </script>
 
         <link rel="stylesheet" href="login_style.css"/>
     </head>
@@ -60,6 +65,9 @@
         </div>  
          
         <?php
+        echo '<script>
+        hello();
+    </script>';
             $kon = mysqli_connect("localhost", "root", "", "uts_restoran");
 
             if (isset($_POST['txtUser'])) {
@@ -74,10 +82,9 @@
                         // START SESSON
                     } else {
                         
-                        // echo '<script type="text/javascript">
-                        //         alert("Wrong email or password!");
-                        //     </script>';
-                        echo "test";
+                        echo '<script>
+                                hello();
+                            </script>';
                     }
                 }
             }
